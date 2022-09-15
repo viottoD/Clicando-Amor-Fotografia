@@ -190,13 +190,11 @@ body{
 
     .home p{
         font-size: 15px;
+    }
     
-
-    }
-    .rodape{
-    text-align: center;
-    }
 }   
 
-
-
+.rodape{
+    text-align: center;
+    align-items: center;
+}
