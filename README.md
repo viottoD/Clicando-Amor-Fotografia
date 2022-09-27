@@ -1,3 +1,3 @@
 # Clicando-Amor-Fotografia
 
-Primeiro projeto copiado sem instruções dieretas
+Primeiro projeto copiado sem instruções diretas

@@ -5,5 +5,6 @@ menu.addEventListener('click', () => {
     menu.classList.toggle('ativo')
     navmenu.classList.toggle('ativo')
 
-})
+}
 
+)
