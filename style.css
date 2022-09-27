@@ -193,49 +193,115 @@ body{
 
     
 }
-  
+
+.container-img{
+    display: flex;
+    justify-content: center;
+    float: center;
+    overflow: hidden;
+    width: 90%;
+}
+
+div.img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+    
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}  
+
+
+
+
 
 .rodape{
     text-align: center;
     align-items: center;
 }
 
-.container-gallery{
-    margin-top: 2.5rem;
+
+
+
+/* GALERIA */
+
+.lbox {
+    visibility: hidden;
+    opacity: 0;
+}
+.album-img{
+    width: 800px;
+    list-style: none;
     display: flex;
-    flex: content;
-    margin-left: 5%;
-    margin-right: 5%;
-    
-   
-   
-    
-
-
+    margin: 100px auto;
+    overflow: hidden;
 }
-
-.img-gallery{
-
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 300px;
-   
-   
-
+.min {
+    width: 200px;
+    padding: 10px;
 }
-
-.img-gallery:hover{
-    border: 1px solid #777;
-}
-
-.gallery img{
+.lbox:target {
+    opacity: 1;
+    visibility: visible;
     width: 100%;
-    height: auto;
-    
-}  
-
-.container .img-gallery{
-    flex-direction: column;
-    justify-content: center;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    text-align: center;
+    background-color: rgba(10,10,10,0.7);
 }
+.box-img {
+    width: 1000px;
+    margin: 150px auto;
+}
+.btn {
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
+}
+#prev {
+    left: 5%;
+    top: 45%;
+}
+#next {
+    right: 5%;
+    top: 45%;
+}
+#close {
+    top: 0;
+    right: 2px;
+}
+.box-img img {
+    opacity: 0;
+    width: 100%;
+    height: 720px;
+    align-items: center;
+}
+
+.lbox:target .box-img img {
+    opacity: 1;
+    transition: opacity 250ms linear;    }
+
+    @media (max-width: 785px){
+    
+    }
+        
